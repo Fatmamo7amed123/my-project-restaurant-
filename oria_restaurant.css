@@ -1,0 +1,599 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+header{
+    height: 100vh;
+    position: relative;
+    background: url('/gallery/IMG_20250807_141321.jpg') center center/cover no-repeat;
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.212);
+}
+header *{
+    z-index: 10;
+}
+.navbar .logo{
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-family: cursive;
+    margin-left: 100px;
+    color: white;
+    text-shadow: 6px 6px 6px rgb(17, 17, 17);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    margin-right: 100px;
+}
+ul li a{
+    text-decoration: none;
+    padding: 15px 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+ul li a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.content{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.651),rgba(116, 116, 116, 0.308));
+}
+.content h2{
+    font-size: 40px;
+    color: white;
+    text-transform: capitalize;
+    font-family: cursive;
+}
+.content p{
+    margin: 20px 0 40px;
+    font-size: 18px;
+    padding-right: 200px;
+    padding-left: 200px;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    font-family: cursive;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+.content .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(243, 235, 235);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid rgb(255, 255, 255);
+}
+.content .btn:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    font-weight: 900;
+    cursor: pointer;
+}
+.container{
+    max-width: 1500px;
+    margin: auto;
+}
+#about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background: linear-gradient(to top,rgba(175, 160, 136, 0.562),rgba(255, 241, 193, 0.521));
+}
+#about .title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#about h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color:black ;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 9px black;
+    font-family: cursive;
+}
+#about .title p{
+    font-size: 22px;
+    font-weight: 900;
+    color:black ;
+    text-transform: capitalize;
+}
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+#about .about-content img{
+    width: 400px;
+    margin-right: 100px;
+}
+#about .about-content p{
+    color: black;
+    margin-right: 110px;
+    margin-left: 100px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    margin-top: 40px;
+}
+.about-content .button{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid rgb(0, 0, 0);
+    align-items: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.about-content .button:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    font-weight: 900;
+    cursor: pointer;
+    font-weight: 900;
+}
+#offers{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(rgba(255, 255, 255, 0.137),rgb(20, 20, 17));
+}
+#offers .title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#offers .title h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: rgb(145, 17, 0);
+    margin-bottom: 15px;
+    text-shadow: 6px 6px 6px black;
+    font-family: cursive;
+}
+#offers .title p{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: cursive;
+}
+#offers .offers-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#offers .offers-items img{
+    width: 180px;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+#offers .offers-items img:hover{
+    opacity: 1;
+    width: 200px;
+    transition: 0.5s;
+}
+#offers .offers-items h3{
+    font-size: 25px;
+    margin: 15px 0;
+    font-family: cursive;
+}
+#offers .offers-items p{
+    font-size: 15px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: black;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    font-family: cursive;
+}
+#offers .offers-items span{
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 8px;
+    color: rgb(145, 17, 0);
+    text-shadow: 2px 2px 4px black;
+}
+#menu{
+    padding: 60px 0;
+}
+#menu .title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#menu .title h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    text-shadow: 6px 6px 6px black;
+    font-family: cursive;
+}
+#menu .title p{
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: cursive;
+}
+#menu .menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu .menu-items .menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+#menu .menu-items .menu-item img{
+    width: 140px;
+    height: 110px;
+    border-radius: 30px;
+    margin-right: 20px;
+    opacity: 0.7;
+}
+#menu .menu-items .menu-item img:hover{
+    opacity: 1;
+    width: 150px;
+    height: 120px;
+    transition: 0.5s;
+}
+#menu .menu-items .menu-item  h3{
+    font-size: 25px;
+    margin: 15px 0;
+    font-family: cursive;
+    position: relative;
+}
+#menu .menu-items .menu-item span{
+    position: absolute;
+    color: rgb(145, 17, 0);
+    margin-left: 20px;
+}
+#menu .menu-items .menu-item p{
+    font-size: 16px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: black;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    font-family: cursive;
+}
+.container .btn{
+    display: block;
+    margin:20px auto 0;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid rgb(250, 242, 242);
+}
+.container .btn:hover{
+    color: rgb(0, 0, 0);
+    border: none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    font-weight: 900;
+    cursor: pointer;
+}
+.day-time{
+    background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0));
+    color: white;
+    text-align: center;
+}
+.day-time .day-time-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+}
+.day-time .day-time-items h3{
+    font-size: 25px;
+    margin: 20px 0 10px;
+    font-family: cursive;
+    position: relative;
+}
+.day-time .day-time-items p{
+    font-size: 16px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    font-family: cursive;
+}
+.day-time .day-time-items img{
+    width: 190px;
+    height: 190px;
+}
+.gallery .img-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery .img-gallery img{
+    width: 110px;
+    height: 140px;
+    border-radius: 30px;
+    margin: 20px;
+    opacity: 0.7;
+}
+.gallery .img-gallery img:hover{
+    opacity: 1;
+    width: 130px;
+    height: 170px;
+    transition: 0.5s;
+}
+.gallery .img-gallery .drink-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.gallery .img-gallery .drink-item span{
+    position: absolute;
+    color: rgb(145, 17, 0);
+    margin-left: 20px;
+}
+.gallery .img-gallery .drink-item h3{
+    font-size: 25px;
+    margin: 15px 0;
+    font-family: cursive;
+    position: relative;
+}
+.gallery .img-gallery .drink-item p{
+    font-size: 16px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: black;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    font-family: cursive;
+}
+.gallery{
+    background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0));
+    padding: 80px 0 60px;
+}
+.gallery h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    text-shadow: 6px 6px 6px black;
+    font-family: cursive;
+    text-align: center;
+}
+.gallery p{
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: cursive;
+    text-align: center;
+}
+#contact{
+    padding: 50px 0;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+#contact .container{
+    max-width: 900px;
+}
+#contact .contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contact .contact-content .contact-info{
+    width: 50%;
+}
+#contact .contact-content .contact-info div{
+    margin: 40px 0;
+    line-height: 1.9;
+}
+#contact .contact-content .contact-info h3{
+    font-size: 18px;
+    margin: 20px 0 10px;
+    font-family: cursive;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(0, 0, 0);
+}
+#contact .contact-content .contact-info p{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: cursive;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+#contact .contact-content .contact-info i{
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+}
+#contact .contact-content .contact-info a i{
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    font-size: 20px;
+}
+#contact .contact-content .contact-info a i:hover{
+    font-size: 30px;
+}
+form{
+    width: 30%;
+}
+textarea , form input{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background: rgb(202, 202, 202);
+}
+#contact .btn{
+    display: block;
+    margin:20px auto 0;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid black;
+    width: 240px;
+    height: 50px;
+}
+#contact .btn:hover{
+    color: rgb(255, 255, 255);
+    background: black;
+    border: none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    font-weight: 900;
+    cursor: pointer;
+    border: 2px solid black;
+}
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+footer a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
